@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ol.css">
+
+   
+    
+</head>
+<body>
+    <main>
+    
+         <div class="container">
+        <img src="https://i.pinimg.com/564x/f7/9f/4c/f79f4c667b646e170d76616b8dba248f.jpg">
+<h1>Go гулять?<h1>
+    <a href="two-sait.html" class="btn" onclick="window.location.href = 'https://www.example.com';">💗Можно машинками по твоей попе прокатится, как по горам💗</a>
+    <button class="btn" id="flyingBtn" onmousemove="moveButton(event)">💋FUCK NIGA💋</button>
+    
+</div>
+<p>© 2024 Моя компания. Все права защищены.</p>
+
+
+
+<script>
+    function moveButton(event) {
+        var btn = document.getElementById('flyingBtn');
+        var btnRect = btn.getBoundingClientRect();
+        var maxX = window.innerWidth - btnRect.width; // Максимальное расстояние по оси X
+        var maxY = window.innerHeight - btnRect.height; // Максимальное расстояние по оси Y
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
+    
+        // Проверяем, чтобы координаты не выходили за пределы окна браузера
+        var x = Math.min(Math.max(mouseX - btnRect.width / 2, 0), maxX);
+        var y = Math.min(Math.max(mouseY - btnRect.height / 2, 0), maxY);
+    
+        btn.style.left = x + 'px';
+        btn.style.top = y + 'px';
+    }
+    </script>
+    
+
+
+
+</main>
+</body>
+</html>
